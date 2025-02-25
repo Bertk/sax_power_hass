@@ -1,6 +1,6 @@
 {
   "name": "dev-sax-power",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.13",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
   "postCreateCommand": "scripts/setup",
   "appPort": ["9125:8123"],
   "portsAttributes": {
@@ -16,27 +16,26 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python",
+        "charliermarsh.ruff",
         "esbenp.prettier-vscode",
         "github.vscode-pull-request-github",
-        "ryanluker.vscode-coverage-gutters",
-        "ms-python.vscode-pylance",
         "ms-python.pylint",
-        "charliermarsh.ruff"
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ryanluker.vscode-coverage-gutters"
       ],
       "settings": {
-        "files.eol": "\n",
-        "editor.tabSize": 4,
-        "python.pythonPath": "/usr/bin/python3",
-        "python.analysis.autoSearchPaths": false,
-        "[python]": {
-          "editor.defaultFormatter": "charliermarsh.ruff",
-          "editor.formatOnSave": true
-        },
-        "editor.formatOnPaste": false,
+        "editor.formatOnPaste": true
         "editor.formatOnSave": true,
-        "editor.formatOnType": true,
+        "editor.formatOnType": false,
+        "editor.tabSize": 4,
+        "files.eol": "\n",
         "files.trimTrailingWhitespace": true,
+        "python.analysis.autoSearchPaths": false,
+        "python.pythonPath": "/usr/bin/python3",
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        },
         "[markdown]": {
           "files.trimTrailingWhitespace": false
         },
