@@ -1,14 +1,12 @@
 {
   "domain": "home battery",
   "name": "sax_power",
-  "codeowners": [
-    "@Bertk"
-  ],
+  "codeowners": ["@Bertk"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/Bertk/sax_power_hass",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/Bertk/sax_power_hass/issues",
-  "requirements": [],
+  "requirements": ["pymodbus>=3.6.8"],
   "version": "0.0.1"
 }
