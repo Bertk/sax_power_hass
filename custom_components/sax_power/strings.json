@@ -1,0 +1,122 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Account is already configured"
+    },
+    "error": {
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "Device-Postfix": "Device postfix",
+          "Host": "Host!",
+          "Name-Device-Prefix": "Name Device Prefix",
+          "Name-Topic-Prefix": "Name Topic Prefix",
+          "Port": "Port",
+          "Prefix": "Prefix"
+        }
+      }
+    }
+  },
+  "device": {
+    "dev_ein_aus": {
+      "name": "SAX Inverter state{postfix}"
+    },
+    "dev_system": {
+      "name": "SAX System{postfix}"
+    },
+    "dev_unknown": {
+      "name": "SAX Unknown{postfix}"
+    }
+  },
+  "entity": {
+    "number": {
+      "battery_power": {
+        "name": "{prefix}power battery"
+      },
+      "smartmeter_power": {
+        "name": "{prefix}power smartmeter"
+      },
+      "battery_soc": {
+        "name": "{prefix}soc battery"
+      },
+      "battery_cycles": {
+        "name": "{prefix}cycles battery"
+      },
+      "battery_capacity": {
+        "name": "{prefix}capacity battery"
+      },
+      "battery_temperature": {
+        "name": "{prefix}temperature battery"
+      },
+      "battery_output": {
+        "name": "{prefix}output battery"
+      },
+      "battery_input": {
+        "name": "{prefix}input battery"
+      },
+      "smartmeter_energy_consumed": {
+        "name": "{prefix}consumed energy smartmeter"
+      },
+      "smartmeter_energy_produced": {
+        "name": "{prefix}produced energy smartmeter"
+      }
+    },
+    "select": {
+      "battery_operationmode": {
+        "name": "{prefix}operationmode battery",
+        "state": {
+          "on": "3",
+          "off": "1",
+          "empty": "4"
+        }
+      }
+    },
+    "sensor": {
+      "battery_power": {
+        "name": "{prefix}power battery"
+      },
+      "smartmeter_power": {
+        "name": "{prefix}power smartmeter"
+      },
+      "battery_soc": {
+        "name": "{prefix}soc battery"
+      },
+      "battery_cycles": {
+        "name": "{prefix}cycles battery"
+      },
+      "battery_capacity": {
+        "name": "{prefix}capacity battery"
+      },
+      "battery_temperature": {
+        "name": "{prefix}temperature battery"
+      },
+      "battery_output": {
+        "name": "{prefix}output battery"
+      },
+      "battery_input": {
+        "name": "{prefix}input battery"
+      },
+      "smartmeter_energy_consumed": {
+        "name": "{prefix}consumed energy smartmeter"
+      },
+      "smartmeter_energy_produced": {
+        "name": "{prefix}produced energy smartmeter"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "api_scan_interval": "Api scan interval (default = 300 sec)",
+          "language": "Language (default = en)",
+          "mode": "Mode(default = api)",
+          "scan_interval": "Web scraping interval (default = 1800 sec)"
+        }
+      }
+    }
+  },
+  "title": "SAX battery"
+}

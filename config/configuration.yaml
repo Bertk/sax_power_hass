@@ -1,6 +1,14 @@
 # https://www.home-assistant.io/integrations/default_config/
 default_config:
 
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
 # https://www.home-assistant.io/integrations/homeassistant/
 homeassistant:
   debug: true
@@ -9,4 +17,4 @@ homeassistant:
 logger:
   default: info
   logs:
-    custom_components.integration_blueprint: debug
+    custom_components.sax_power: debug

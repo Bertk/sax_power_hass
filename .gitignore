@@ -16,3 +16,15 @@ coverage.xml
 # Home Assistant configuration
 config/*
 !config/configuration.yaml
+custom_components/hacs/*
+configuration.yaml
+automations.yaml
+.HA_VERSION
+scenes.yaml
+scripts.yaml
+secrets.yaml
+.storage/*
+blueprints/*
+home-assistant.log
+home-assistant_v2.db
+home-assistant.log.1
